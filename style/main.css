@@ -1,0 +1,439 @@
+/*<!-- File Header
+Name: Andre Azevedo
+Date: January 21, 2023
+Section: CST 8285 section 03
+Lab: Assignment 1
+File: index.html
+Objective: Create a portifolio Website.
+-->*/
+
+/* <!-- GENERAL STYLING --!> */
+
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #CBE4DE;
+}
+
+/* <!-- MENU STYLING --!> */
+#menu a:link, #menu a:visited{
+    color: #CBE4DE;
+    text-align: center;
+    text-decoration: none; 
+}
+
+#menu{
+    color: #CBE4DE;
+    font-size: larger;
+    background-color: #2C3333;
+    border: none;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    background-color: #2C3333;
+    padding: 40px;
+}
+
+#alg:hover{
+    color: #0E8388;
+}
+
+nav ul a:hover{
+    color: #0E8388;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #2C3333;
+}
+
+/* <!-- SEARCH BOX STYLING --!> */
+input[type="search"] {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #555;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 20px;
+    width: 400px;
+  }
+    input[type="search"]:focus {
+    outline: none;
+    border-bottom-color: #0E8388;
+  }
+
+  /* <!-- SEARCH BOX BUTTON STYLING --!> */
+  button {
+    background-color: #0E8388;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+    button:hover {
+    background-color: #2E4F4F;
+  }
+  #button-title{
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 4px 2px;
+    margin-right: 10px;
+  }
+
+  #search-bar{
+    background-color: #2E4F4F;
+    padding: 10px;
+  }
+
+
+/* FOOTER STYLE */
+#bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #2C3333;
+  color: #CBE4DE;
+  text-align: center;
+}
+
+/* <!-- INDEX STYLING --!> */
+#me{
+    color: #2E4F4F;
+    padding: 100px;
+}
+
+mark{
+    color: #0E8388;
+    font-weight: bold;
+    background-color: #CBE4DE;
+    font-style: italic;
+}
+
+#about-me{
+    color: #2E4F4F;
+    text-align: left;
+    font-size: 30px;
+    padding: 60px;
+    text-align: justify;
+    width: 45%;
+
+}
+
+#alg{
+    color: #2C3333;
+}
+
+#photo1{
+    width: 420px;
+    height: 520px;
+    float: right;
+    margin: 20px;
+    margin-right: 100px;
+}
+
+#fam{
+    width: 300px;
+    height: 180px;
+    padding: 15px;
+}
+
+#nos{
+    width: 310px;
+    height: 210px;
+    padding: 15px;
+}
+
+#city{
+    width: 240px;
+    height: 320px;
+}
+
+/* <!-- RESUME STYLING --!> */
+#info{
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    background-color: #2E4F4F;
+}
+
+#exp, #edu, #skills, #pers, #vol, #projects{
+    color: #ffffff;
+    padding: 8px;
+    background-color: #0E8388;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#project-link a, #project-link a:after{
+    color: #2C3333;
+    text-align: left;
+    margin: 40px;
+
+}
+
+#git-pic{
+    float: left;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+/* <!-- LEVEL 1 & 2 STYLING --!> */
+
+.level{
+    color: #ffffff;
+    padding: 8px;
+    background-color: #0E8388;
+    margin-bottom: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+/* <!-- COURSES STYLING --!> */
+
+.course{
+    margin-bottom: 20px;
+}
+
+/* LEVEL 1 */
+#course{
+    padding: 20px;
+}
+
+/* ESSENTIALS */
+#essentials{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+#ess-pic{
+    float: left;
+    margin: 15px;
+}
+
+/* PROGRAMMING */
+#programming{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+#prog-pic{
+    float: right;
+    margin: 15px;
+    height: 169px;
+    width: 298px;
+}
+
+/* DATABASE */
+#database{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+#data-pic{
+    float: left;
+    margin: 15px;
+    height: 180px;
+    width: 150px;
+}
+
+/* ACHIEVING SUCCESS */
+#success{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+#suc-pic{
+    float: right; 
+    margin: 15px;
+    height: 150px;
+    width: 230px;
+}
+
+/* COMMNS 1 */
+#communication{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+#com-pic{
+    float: left;
+    margin: 15px;
+    height: 150px;
+    
+}
+
+/* MATH */
+#math{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+#mat-pic{
+    float: right;
+    margin: 15px;
+    height: 102px;
+    width: 153px;
+}
+
+/* ID PREREQUISITES STYLING */
+
+.prerequisites{
+    padding: 10px;
+    color: #2C3333;
+    font-weight: bold;
+    font-size: 18px;
+    list-style: none;
+
+}
+
+.prerequisites:hover{
+    color: #0E8388;
+}
+
+/* LEVEL 2 */
+
+#db-sys{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+#db-pic{
+    float: left;
+    margin: 15px;
+    height: 180px;
+    width: 150px;
+}
+
+
+#linux{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+#lin-pic{
+    float: left;
+    margin: 15px;
+    width: 250px;
+    height: 160px;
+    padding-top: 20px;
+}
+
+#more-margin{
+    margin-top: -30px;
+    margin-left: 280px;
+}
+
+#oop{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#oop-pic{
+    float: right;
+    margin: 15px;
+    height: 169px;
+    width: 298px;
+}
+
+#web{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#web-pic{
+    float: left;
+    margin: 15px;
+    height: 180px;
+    width: 180px;
+}
+
+#com2{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#com2-pic{
+    float: right;
+    margin: 15px;
+    height: 150px;
+}
+#coop{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#coop-pic{
+   float: left;
+   margin: 15px;
+   width: 220px;
+   height: 133px; 
+}
+
+#wine{
+    color: #2C3333;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#wine-pic{
+    float: right;
+    margin: 15px;
+    width: 240px;
+    height: 160px;
+}

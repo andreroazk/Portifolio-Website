@@ -1,0 +1,9 @@
+p, ul, h3{
+    font-size: 18px;
+    padding-left: 25px;
+    list-style: none;
+}
+
+#menu ul{
+    font-size: 20px;
+}
